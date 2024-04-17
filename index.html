@@ -622,22 +622,20 @@ What We Offer:
       <!-- Your other scripts go here -->
     
       <script>
-        document.getElementById('openChatbotBtn').addEventListener('click', function() {
-          !function(w, d, s, ...args){
-            var div = d.createElement('div');
-            div.id = 'aichatbot';
-            d.body.appendChild(div);
-            w.chatbotConfig = args;
-    
-            var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s);
-            j.defer = true;
-            j.type = 'module';
-            j.src = 'https://aichatbot.sendbird.com/index.js';
-            f.parentNode.insertBefore(j, f);
-          }(window, document, 'script', '08E25833-8A0C-4F46-B4E4-523D9BAEA84B', 'onboarding_bot');
-        });
-      </script>
+!function(w, d, s, ...args){
+  var div = d.createElement('div');
+  div.id = 'aichatbot';
+  d.body.appendChild(div);
+  w.chatbotConfig = args;
+
+  var f = d.getElementsByTagName(s)[0],
+  j = d.createElement(s);
+  j.defer = true;
+  j.type = 'module';
+  j.src = 'https://aichatbot.sendbird.com/index.js';
+  f.parentNode.insertBefore(j, f);
+}(window, document, 'script', '96A682CE-69CC-4CAF-8685-F8937916BC43', 'onboarding_bot');
+</script>
     
     
     <div class="container">
